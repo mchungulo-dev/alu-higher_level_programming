@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-def no_c(my_string):
-    new_string = ""
-    for char in my_string:
-        if char != 'c' and char != 'C':
-            new_string += char
-    return new_string
+def max_integer(my_list=[]):
+    if not my_list:
+        return None
+    
+    max_val = my_list[0]
+    for i in my_list:
+        if i > max_val:
+            max_val = i
+    return max_val
